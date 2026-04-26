@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#header {
+  background-color: #FF0000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+#box-color {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+  height: 40%;
+}
+
+.grid-item {
+  border: 0.5px solid black;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 calc(100% / 35);
+}
+
+#blue {
+  background-color: blue;
+  color: blue;
+  border-radius: 50px;
+  border: 2.5px solid black;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+#colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+#red {
+  background-color: red;
+  color: red;
+}
+
+#yellow {
+  background-color: yellow;
+  color: yellow;
+}
+
+#orange {
+  background-color: orange;
+  color: orange;
+}
+
+#purple {
+
+  background-color: purple;
+  color: purple;
+}
+
+#pink {
+  background-color: pink;
+  color: pink;
+}
+
+#hex {
+  font-size: 30px;
+}
