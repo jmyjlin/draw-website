@@ -1,6 +1,7 @@
 let container = document.querySelector('#container');
 let colorBtns = document.querySelectorAll('.color-button')
 let color = "blue"
+let hexButton = document.querySelector("#hex");
 
 for (let i = 0; i < 35; i++) {
   for (let j = 0; j < 35; j++) {
@@ -41,7 +42,15 @@ colorBtns.forEach((btn) => {
         break;
       case "hex":
         let hexChoice = prompt("Enter hex code (with #): ")
-
+        if (hexChoice.includes("#") && (hexChoice.length == 4 || hexChoice.length == 7)) {
+          color = `${hexChoice}`
+          hexButton.textContent = "";
+          hexButton.style.backgroundColor = `${hexChoice}`;
+        } else if (!hexChoice.includes("#")) {
+          alert("Include a # before the code.")
+        } else if (hexChoice.length != 4 || hexChoice.length != 7) {
+          alert("Your hex code has an invalid length.")
+        }
     }
   });
 });
