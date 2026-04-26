@@ -55,6 +55,12 @@ body {
   cursor: pointer;
 }
 
+#trash-can {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 #blue {
   background-color: blue;
   color: blue;

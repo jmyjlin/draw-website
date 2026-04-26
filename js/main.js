@@ -3,6 +3,7 @@ let colorBtns = document.querySelectorAll('.color-button')
 let color = "blue"
 let hexButton = document.querySelector("#hex");
 let eraserButton = document.querySelector('#eraser');
+let trashButton = document.querySelector('#trash-can');
 
 for (let i = 0; i < 35; i++) {
   for (let j = 0; j < 35; j++) {
@@ -12,6 +13,10 @@ for (let i = 0; i < 35; i++) {
 
     gridItem.addEventListener("mouseover", () => {
       gridItem.style.backgroundColor = color;
+    });
+
+    trashButton.addEventListener("click", () => {
+      gridItem.style.backgroundColor = "white";
     });
   }
 }
