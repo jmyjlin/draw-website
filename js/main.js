@@ -29,6 +29,7 @@ colorBtns.forEach((btn) => {
       colorBtn.style.border = "none";
     });
     btn.style.border = "2.5px solid black";
+    hexButton.style.backgroundColor = "lightgray";
     switch (btn.id) {
       case "eraser":
         color = "white";
