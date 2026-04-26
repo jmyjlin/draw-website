@@ -2,6 +2,7 @@ let container = document.querySelector('#container');
 let colorBtns = document.querySelectorAll('.color-button')
 let color = "blue"
 let hexButton = document.querySelector("#hex");
+let eraserButton = document.querySelector('#eraser');
 
 for (let i = 0; i < 35; i++) {
   for (let j = 0; j < 35; j++) {
@@ -15,6 +16,13 @@ for (let i = 0; i < 35; i++) {
   }
 }
 
+eraserButton.addEventListener("click", () => {
+  color = "white";
+  colorBtns.forEach((colorBtn) => {
+      colorBtn.style.border = "none";
+  });
+});
+
 colorBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     colorBtns.forEach((colorBtn) => {
@@ -22,6 +30,8 @@ colorBtns.forEach((btn) => {
     });
     btn.style.border = "2.5px solid black";
     switch (btn.id) {
+      case "eraser":
+        color = "white";
       case "blue":
         color = "blue";
         break;

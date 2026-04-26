@@ -49,6 +49,12 @@ body {
   flex: 0 0 calc(100% / 35);
 }
 
+#eraser {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 #blue {
   background-color: blue;
   color: blue;
@@ -100,5 +106,6 @@ body {
 }
 
 #hex {
+  background-color: lightgray;
   font-size: 30px;
 }
