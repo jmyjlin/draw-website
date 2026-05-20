@@ -11,7 +11,7 @@ for (let i = 0; i < 35; i++) {
     gridItem.classList.add('grid-item');
     container.append(gridItem);
 
-    gridItem.addEventListener("mouseover", () => {
+    gridItem.addEventListener("click", () => {
       gridItem.style.backgroundColor = color;
     });
 
